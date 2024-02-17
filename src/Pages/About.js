@@ -83,9 +83,12 @@ const About = () => {
             </div>
           </div>
         </main>
-        <button className=" mx-auto flex justify-center items-center pl-4 font-extralight text-stone-800 hover:scale-110 transition-all pb-4">
+        <Link
+          to="https://github.com/Rajat-Uchiha/DevTales"
+          className=" mx-auto flex justify-center items-center pl-4 font-extralight text-stone-800 hover:scale-110 transition-all pb-4"
+        >
           <FaGithub className="text-xl" />
-        </button>
+        </Link>
       </section>
       <Footer />
     </>
