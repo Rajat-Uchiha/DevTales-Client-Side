@@ -7,6 +7,7 @@ import Currblog from "./Components/Currblog";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Profile from "./Pages/Profile";
+import Pagenotfound from "./Pages/Pagenotfound";
 
 function App() {
   const [cookie] = useCookies(["auth_Token"]);
@@ -19,6 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="*" element={<Pagenotfound />} />
           <Route
             path="profile"
             element={!cookie.auth_Token ? <Login /> : <Profile />}
